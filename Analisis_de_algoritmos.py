@@ -1,4 +1,5 @@
 #Encontrar un número dentro de una lista
+#Este ser aun cambio relevante?
 
 def contar_for(lista, numero_objetivo):
     contador = 0
@@ -47,7 +48,7 @@ Resultados con lista2:
 FOR:   2 ocurrencias en 0.00000191 seg
 COUNT: 2 ocurrencias en 0.00000191 seg
 """
-
+edu = "En progreso"
 
 
 
