@@ -1,16 +1,21 @@
-#Encontrar un número dentro de una lista
-#Este ser aun cambio relevante?
+#Los siguientes algoritmos deben determinar cuantas veces aparece un número (en este caso el "5") 
+# dentro de una lista.
 
+#Algoritmo 1: bucle for
 def contar_for(lista, numero_objetivo):
     contador = 0
     for num in lista:
         if num == numero_objetivo:
             contador += 1
     return contador
-    
+
+
+#Algoritmo 2: función count    
 def contar_count(lista, numero_objetivo):
     return lista.count(numero_objetivo)
 
+
+#Medición del tiempo de ejecución con el módulo time. 
 import time
 def medir_tiempo(funcion, lista, numero_objetivo):
     inicio = time.time()
@@ -27,28 +32,20 @@ numero_objetivo = 5
 resultado1, tiempo1 = medir_tiempo(contar_for, lista1, numero_objetivo)
 resultado2, tiempo2 = medir_tiempo(contar_count, lista1, numero_objetivo)
 
-print("Resultados con lista1:")
-print(f"FOR:   {resultado1} ocurrencias en {tiempo1:.8f} segundos")
-print(f"COUNT: {resultado2} ocurrencias en {tiempo2:.8f} segundos")
+print(f"Recuento del nº {numero_objetivo} en las listas.")
+
+print("\nResultados con lista1:")
+print(f"Con buble FOR: {resultado1} veces en {tiempo1:.8f} segundos")
+print(f"Con función COUNT: {resultado2} veces en {tiempo2:.8f} segundos")
 
 resultado3, tiempo3 = medir_tiempo(contar_for, lista2, numero_objetivo)
 resultado4, tiempo4 = medir_tiempo(contar_count, lista2, numero_objetivo)
 
-print("Resultados con lista2:")
-print(f"FOR:   {resultado3} ocurrencias en {tiempo3:.8f} seg")
-print(f"COUNT: {resultado4} ocurrencias en {tiempo4:.8f} seg")
+print("\nResultados con lista2:")
+print(f"Con buble FOR: {resultado3} veces en {tiempo3:.8f} segundos")
+print(f"Con función COUNT: {resultado4} veces en {tiempo4:.8f} segundos")
 
 
-
-"""
-Resultados con lista1:
-FOR:   4 ocurrencias en 0.00000668 segundos
-COUNT: 4 ocurrencias en 0.00000525 segundos
-Resultados con lista2:
-FOR:   2 ocurrencias en 0.00000191 seg
-COUNT: 2 ocurrencias en 0.00000191 seg
-"""
-edu = "En progreso"
 
 
 
