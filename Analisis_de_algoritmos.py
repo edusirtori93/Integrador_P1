@@ -37,14 +37,14 @@ resultado2, tiempo2 = medir_tiempo(contar_count, lista1, numero_objetivo)
 print(f"Recuento del nº {numero_objetivo} en las listas.")
 
 print("\nResultados con lista1:")
-print(f"Con buble FOR: {resultado1} veces en {tiempo1:.8f} segundos")
+print(f"Con bucle FOR: {resultado1} veces en {tiempo1:.8f} segundos")
 print(f"Con función COUNT: {resultado2} veces en {tiempo2:.8f} segundos")
 
 resultado3, tiempo3 = medir_tiempo(contar_for, lista2, numero_objetivo)
 resultado4, tiempo4 = medir_tiempo(contar_count, lista2, numero_objetivo)
 
 print("\nResultados con lista2:")
-print(f"Con buble FOR: {resultado3} veces en {tiempo3:.8f} segundos")
+print(f"Con bucle FOR: {resultado3} veces en {tiempo3:.8f} segundos")
 print(f"Con función COUNT: {resultado4} veces en {tiempo4:.8f} segundos")
 
 
