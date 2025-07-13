@@ -3,16 +3,18 @@
 
 #Algoritmo 1: bucle for
 def contar_for(lista, numero_objetivo):
-    contador = 0
-    for num in lista:
-        if num == numero_objetivo:
-            contador += 1
-    return contador
+    contador = 0                      #1 op
+    for num in lista:                 #n op
+        if num == numero_objetivo:    #1 op
+            contador += 1             #2 op
+    return contador                   #1 op
+#T(n) = 1 + 1 + n*3 = 2+3n
 
 
 #Algoritmo 2: función count    
 def contar_count(lista, numero_objetivo):
-    return lista.count(numero_objetivo)
+    return lista.count(numero_objetivo)  #1 (llamada) + n(accesos a la lista) + n(comparaciones) op
+#T(n) = 1 + n + n = 1+2n
 
 
 #Medición del tiempo de ejecución con el módulo time. 
@@ -25,7 +27,7 @@ def medir_tiempo(funcion, lista, numero_objetivo):
 
 
 lista1 = [1, 6, 3, 74, 2, 5, 5, 2, 9, 42, 7, 21, 6, 65, 37, 45, 5, 5, 106, 666, 787, 7, 4, 8, 23, 77, 39, 44]
-lista2 = [1, 6, 3, 74, 2, 5, 5, 42,]
+lista2 = [1, 6, 3, 74, 2, 5, 5, 42]
 numero_objetivo = 5
 
 
